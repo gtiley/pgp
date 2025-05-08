@@ -16,7 +16,7 @@
 Some filtering of the multisample vcf is done based on the GATK best practices. This might not always be a good idea, so the vcfs at various stages are provided. No more filtering is done within **pgp** because using vcftools is very easy and coming up with depth and missing data cutoffs is a bit subjective requiring data exploration and judgement calls. Thus, the goal of this pipeline is to get the computational load of genotyping done and dealing with all of the GATK steps in a containerized envrionment. Steps beyond that are the time for science.
 
 
-Development of the **sabr-jgt** pipeline borrowed heavily from [sarek](https://github.com/nf-core/sarek) to learn how to finesse various nf-core modules. Many of the GATK modules were copied over to `modules/local` and modified for narrower purposes.
+Development of **pgp** borrowed heavily from [sarek](https://github.com/nf-core/sarek) to learn how to finesse various nf-core modules. Many of the GATK modules were copied over to `modules/local` and modified for narrower purposes.
 
 ## Usage
 The input data is a comma-separated sample sheet that looks as follows:
